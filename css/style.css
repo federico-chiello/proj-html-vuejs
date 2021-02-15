@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1070px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* classi ritulizzabili */
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+/* header */
+header{
+  background-color: red;
+  width: 100%;
+  height: 500px;
+}
+
+/* main */
+main{
+  background-color: green;
+  width: 100%;
+  height: 500px;
+}
+
+/* footer */
+footer{
+  background-color: blue;
+  width: 100%;
+  height: 100px;
+}
