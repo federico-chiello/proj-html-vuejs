@@ -55,23 +55,28 @@ a {
   background-color: #ffa837;
 }
 
+.bcg_blue {
+  background-color: #556eed;
+}
+
 /* header */
 header{
-  background-color: red;
   width: 100%;
-  height: 500px;
+  height: 600px;
+  background-image: url('../seo/images/1-hero-image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 header nav {
   width: 100%;
   height: 80px;
-  background-color: violet;
 }
 
 header nav .navbar-left{
   width: 30%;
   height: 80px;
-  background-color: pink;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -80,7 +85,6 @@ header nav .navbar-left{
 header nav .navbar-right{
   width: 70%;
   height: 80px;
-  background-color: lightgreen;
 }
 
 header nav .navbar-right ul{
@@ -102,6 +106,7 @@ header nav .navbar-right #apply{
 header nav .navbar-right ul li:last-child a{
   padding: 8px;
   border-radius: 20px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
@@ -109,11 +114,25 @@ header nav .navbar-right ul li:last-child a{
 header .jumbotron {
   height: calc(100% - 80px);
   width: 100%;
-  background-color: yellow;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 header .jumbotron .text{
   width: 40%;
+}
+
+header .jumbotron .text h1,
+header .jumbotron .text p{
+  margin-bottom: 30px;
+}
+
+header .jumbotron .text ul li a{
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 /* main */
