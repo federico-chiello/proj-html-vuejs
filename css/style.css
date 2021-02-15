@@ -299,6 +299,22 @@ main section#our-work .our-work-center .btn a{
   text-transform: uppercase;
 }
 
+/* section our-plans */
+main section#our-plans{
+  background-image: url('../seo/images/background1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 70px;
+}
+
+/* our-plans-top */
+main section#our-plans .our-plans-top{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
 
 /* footer */
 footer{
