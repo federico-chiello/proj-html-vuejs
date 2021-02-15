@@ -105,10 +105,15 @@ header nav .navbar-right ul li:last-child a{
   text-transform: uppercase;
 }
 
+/* jumbotron */
 header .jumbotron {
   height: calc(100% - 80px);
   width: 100%;
   background-color: yellow;
+}
+
+header .jumbotron .text{
+  width: 40%;
 }
 
 /* main */
