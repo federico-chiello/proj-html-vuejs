@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* classi ritulizzabili */
 .container {
   max-width: 1070px;
   height: 100%;
   margin: 0 auto;
 }
 
-/* classi ritulizzabili */
 .clearfix::after {
   content: '';
   display: table;
@@ -23,6 +27,32 @@
 
 .float-left {
   float: left;
+}
+
+ul li {
+ display: inline-block;
+ margin-right: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.ms_white{
+  color: white;
+}
+
+.ms_orange{
+  color: #ffa837;
+}
+
+.bcg_orange {
+  background-color: #ffa837;
 }
 
 /* header */
@@ -41,14 +71,38 @@ header nav {
 header nav .navbar-left{
   width: 30%;
   height: 80px;
-  display: inline-block;
   background-color: pink;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 header nav .navbar-right{
   width: 70%;
   height: 80px;
   background-color: lightgreen;
+}
+
+header nav .navbar-right ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .navbar-right ul li{
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+header nav .navbar-right #apply{
+  padding: 2px 5px;;
+  border: 1px solid #ffa837;
+  border-radius: 10px;
+}
+
+header nav .navbar-right ul li:last-child a{
+  padding: 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
 }
 
 header .jumbotron {
