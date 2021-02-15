@@ -263,6 +263,40 @@ main section#see .see-bottom .box p{
 /* section our-work */
 main section#our-work{
   background-color: #f7f8fa;
+  padding-bottom: 70px;
+}
+
+/* our-work-top */
+main section#our-work .our-work-top{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+/* our-work-center */
+main section#our-work .our-work-center .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section#our-work .our-work-center .row .box{
+  padding: 10px;
+}
+
+main section#our-work .our-work-center .btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+main section#our-work .our-work-center .btn a{
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 
