@@ -144,7 +144,6 @@ main{
 
 /* section meet */
 main section#meet {
-  height: 400px;
   width: 100%;
   padding-top: 100px;
   background-color: #f7f8fa;
@@ -159,8 +158,45 @@ main section#meet .meet-top{
 
 main section#meet .meet-top h1,
 main section#meet .meet-top p{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
+
+main section#meet .meet-center{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main section#meet .meet-center .box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc(100% / 4);
+  background-color: white;
+  padding: 40px;
+}
+
+main section#meet .meet-center .box i{
+  font-size: 30px;
+}
+
+main section#meet .meet-center .box i,
+main section#meet .meet-center .box h3{
+  margin-bottom: 10px;
+}
+
+main section#meet .meet-center .box p{
+  text-align: center;
+}
+
+main section#meet .meet-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
 
 /* footer */
 footer{
