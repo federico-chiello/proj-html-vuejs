@@ -51,6 +51,10 @@ a {
   color: #ffa837;
 }
 
+.ms_yellow{
+  color: #ffa837;
+}
+
 .bcg_orange {
   background-color: #ffa837;
 }
@@ -139,7 +143,6 @@ header .jumbotron .text ul li a{
 main{
   background-color: green;
   width: 100%;
-  height: 1000px;
 }
 
 /* section meet */
@@ -149,18 +152,19 @@ main section#meet {
   background-color: #f7f8fa;
 }
 
+/* meet-top */
 main section#meet .meet-top{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
 }
 
-main section#meet .meet-top h1,
+main section#meet .meet-top h2,
 main section#meet .meet-top p{
   margin-bottom: 40px;
 }
 
+/* meet-center */
 main section#meet .meet-center{
   display: flex;
   justify-content: space-around;
@@ -190,6 +194,7 @@ main section#meet .meet-center .box p{
   text-align: center;
 }
 
+/* meet-bottom */
 main section#meet .meet-bottom{
   display: flex;
   justify-content: center;
@@ -198,6 +203,63 @@ main section#meet .meet-bottom{
 }
 
 /* section see */
+main section#see{
+  width: 100%;
+  height: 500px;
+  padding-top: 100px;
+  background-image: url('../seo/images/pattern_background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #051642;
+}
+
+/* see-top */
+main section#see .see-top{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+main section#see .see-top h2,
+main section#see .see-top p{
+  margin-bottom: 30px;
+}
+
+/* see-center */
+main section#see .see-center{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main section#see .see-center .box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc(100% / 6);
+  background-color: #071b50;
+  padding: 20px;
+}
+
+main section#see .see-center .box i{
+  font-size: 30px;
+}
+
+main section#see .see-center .box i.arrow-right{
+  font-size: 10px;
+}
+
+main section#see .see-center .box i,
+main section#see .see-center .box h3{
+  margin-bottom: 10px;
+}
+
+main section#see .see-center .box p{
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 
 /* footer */
