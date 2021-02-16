@@ -556,17 +556,40 @@ main section#start .btn a{
 footer{
   background-color: white;
   width: 100%;
+}
+
+footer .container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  padding: 40px 0;
 }
 
 footer img{
-  width: 10%;
+  width: 15%;
+}
+
+/* footer-nav */
+footer .footer-nav ul li{
+  padding-right: 20px;
 }
 
 footer .footer-nav ul li:first-child a{
   color: #ffa837;
+}
+
+/* copyright */
+footer .copyright ul li{
+  border-right: 1px solid #818e9d;
+}
+
+footer .copyright ul li:last-child{
+  border-right: none;
+}
+
+footer img,
+footer .footer-nav,
+footer .copyright{
+  margin-bottom: 50px;
 }
