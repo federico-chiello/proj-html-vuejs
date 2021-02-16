@@ -47,12 +47,20 @@ a {
   color: white;
 }
 
+.ms_black{
+  color: black;
+}
+
 .ms_orange{
   color: #ffa837;
 }
 
 .ms_yellow{
   color: #ffa837;
+}
+
+.ms_grey{
+  color: #818e9d;
 }
 
 .bcg_orange {
@@ -305,11 +313,62 @@ main section#our-plans{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-bottom: 70px;
+  padding: 70px 0;
 }
 
 /* our-plans-top */
 main section#our-plans .our-plans-top{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* our-plans-bottom */
+main section#our-plans .our-plans-bottom{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+main section#our-plans .our-plans-bottom .box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc(100% / 6);
+  background-color: #f7f8fa;
+  padding: 20px;
+}
+
+main section#our-plans .our-plans-bottom .btn a{
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+main section#our-plans .our-plans-bottom .box:nth-child(3) a{
+  border: 0px;
+}
+
+main section#our-plans .our-plans-bottom h3,
+main section#our-plans .our-plans-bottom div{
+  margin-bottom: 30px;
+}
+
+main section#our-plans .our-plans-bottom div.text {
+  font-size: 13px;
+}
+
+/* section our-news */
+main section#our-news{
+  background-color: #f7f8fa;
+}
+
+/* our-news-top */
+main section#our-news .our-news-top{
   text-align: center;
   width: 50%;
   margin: 0 auto;
