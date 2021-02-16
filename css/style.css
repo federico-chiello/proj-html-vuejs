@@ -115,11 +115,17 @@ header nav .navbar-right #apply{
   border-radius: 10px;
 }
 
+header nav .navbar-right ul li:first-child a{
+  color: #ffa837;
+}
+
 header nav .navbar-right ul li:last-child a{
   padding: 8px;
   border-radius: 20px;
   font-size: 12px;
   text-transform: uppercase;
+  color: white;
+  background-color: #ffa837;
 }
 
 /* jumbotron */

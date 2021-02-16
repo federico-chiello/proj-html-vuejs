@@ -12,250 +12,254 @@
   <title>Layout Seo</title>
 </head>
 <body>
-  <!-- header -->
-  <header>
-    <div class="container">
-      <!-- navbar -->
-      <nav>
-        <div class="navbar-left float-left">
-          <img src="seo/images/logo_seo_w_1x.png" alt="">
-        </div>
-        <div class="navbar-right float-right">
-          <ul>
-            <li><a href="#" class="ms_orange">Home</a></li>
-            <li><a href="#" class="ms_white">Who We Are</a></li>
-            <li><a href="#" class="ms_white">What We Do</a></li>
-            <li><a href="#" class="ms_white">Where We Work</a></li>
-            <li><a href="#" class="ms_white">Careers</a> <span><a href="#" class="ms_orange" id="apply">Apply</a></span></li>
-            <li><a href="#" class="ms_white">News</a></li>
-            <li><a href="#" class="ms_white bcg_orange">Get in touch now</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- / navbar -->
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <div class="text">
-          <h1 class="ms_white">SEM Campaigns Made Simple With Avada</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <ul>
-            <li><a href="#" class="ms_white bcg_orange">Buy Avada Now</a></li>
-            <li><a href="#" class="ms_white bcg_blue">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- / header -->
-  <!-- main -->
-  <main>
-    <!-- section meet -->
-    <section id="meet">
+  <div id="avada">
+    <!-- header -->
+    <header>
       <div class="container">
-        <!-- meet-top -->
-        <div class="meet-top">
-          <h2>Meet The New Agency SEO Template From Avada Team</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <!-- meet-center -->
-        <div class="meet-center">
-          <div class="box">
-            <i class="fas fa-road ms_orange"></i>
-            <h3>Establish Goals</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <!-- navbar -->
+        <nav>
+          <div class="navbar-left float-left">
+            <img src="seo/images/logo_seo_w_1x.png" alt="">
           </div>
-          <div class="box">
-            <i class="fas fa-video ms_orange"></i>
-            <h3>Work With a Team</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="navbar-right float-right">
+            <ul>
+              <li v-for="link in menu"><a href="#" class="ms_white">{{link}}</a></li>
+              <!-- <li><a href="#" class="ms_orange">Home</a></li>
+              <li><a href="#" class="ms_white">Who We Are</a></li>
+              <li><a href="#" class="ms_white">What We Do</a></li>
+              <li><a href="#" class="ms_white">Where We Work</a></li>
+              <li><a href="#" class="ms_white">Careers</a> <span><a href="#" class="ms_orange" id="apply">Apply</a></span></li>
+              <li><a href="#" class="ms_white">News</a></li>
+              <li><a href="#" class="ms_white bcg_orange">Get in touch now</a></li> -->
+            </ul>
           </div>
-          <div class="box">
-            <i class="fas fa-tint ms_orange"></i>
-            <h3>Get Results</h3>
+        </nav>
+        <!-- / navbar -->
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+          <div class="text">
+            <h1 class="ms_white">SEM Campaigns Made Simple With Avada</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-        <!-- meet-bottom -->
-        <div class="meet-bottom">
-          <img src="seo\images\agency-seo-desk-front-800x380.jpg" alt="">
-        </div>
-      </div>
-    </section>
-    <!-- / section meet -->
-    <!-- section see -->
-    <section id="see">
-      <div class="container">
-        <!-- see-top -->
-        <div class="see-top ms_white">
-          <h2>See Our Top Notch Services</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <!-- see-bottom -->
-        <div class="see-bottom ms_white">
-          <div class="box">
-            <i class="fab fa-google ms_yellow"></i>
-            <h3>Google SEO</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="ms_yellow">Read More <i class="fas fa-chevron-right arrow-right"></i></a>
-          </div>
-          <div class="box">
-            <i class="fas fa-cog ms_yellow"></i>
-            <h3>Brand Strategy</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="ms_yellow">Read More <i class="fas fa-chevron-right arrow-right"></i></a>
-          </div>
-          <div class="box">
-            <i class="fas fa-city ms_yellow"></i>
-            <h3>Local SEO</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="ms_yellow">Read More <i class="fas fa-chevron-right arrow-right"></i></a>
-          </div>
-          <div class="box">
-            <i class="far fa-chart-bar ms_yellow"></i>
-            <h3>SEO Analysis</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="ms_yellow">Read More <i class="fas fa-chevron-right arrow-right"></i></a>
+            <ul>
+              <li><a href="#" class="ms_white bcg_orange">Buy Avada Now</a></li>
+              <li><a href="#" class="ms_white bcg_blue">Contact Us</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-    <!-- / section see -->
-    <!-- section our-work -->
-    <section id="our-work">
-      <div class="container">
-        <!-- our-work-top -->
-        <div class="our-work-top">
-          <h2>Our Work</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <!-- our-work-center -->
-        <div class="our-work-center">
-          <div class="row">
+    </header>
+    <!-- / header -->
+    <!-- main -->
+    <main>
+      <!-- section meet -->
+      <section id="meet">
+        <div class="container">
+          <!-- meet-top -->
+          <div class="meet-top">
+            <h2>Meet The New Agency SEO Template From Avada Team</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <!-- meet-center -->
+          <div class="meet-center">
             <div class="box">
-              <img src="seo\images\case-study-gallery-3-1-200x150.jpg" alt="">
+              <i class="fas fa-road ms_orange"></i>
+              <h3>Establish Goals</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="box">
-              <img src="seo\images\case-study-gallery-2-200x150.jpg" alt="">
+              <i class="fas fa-video ms_orange"></i>
+              <h3>Work With a Team</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="box">
-              <img src="seo\images\case-study-gallery-6-1-200x150.jpg" alt="">
+              <i class="fas fa-tint ms_orange"></i>
+              <h3>Get Results</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
-          <div class="row">
+          <!-- meet-bottom -->
+          <div class="meet-bottom">
+            <img src="seo\images\agency-seo-desk-front-800x380.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- / section meet -->
+      <!-- section see -->
+      <section id="see">
+        <div class="container">
+          <!-- see-top -->
+          <div class="see-top ms_white">
+            <h2>See Our Top Notch Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <!-- see-bottom -->
+          <div class="see-bottom ms_white">
             <div class="box">
-              <img src="seo\images\case-study-gallery-4-1-200x150.jpg" alt="">
+              <i class="fab fa-google ms_yellow"></i>
+              <h3>Google SEO</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="ms_yellow">Read More <i class="fas fa-chevron-right arrow-right"></i></a>
             </div>
             <div class="box">
-              <img src="seo\images\case-study-gallery-5-1-200x150.jpg" alt="">
+              <i class="fas fa-cog ms_yellow"></i>
+              <h3>Brand Strategy</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="ms_yellow">Read More <i class="fas fa-chevron-right arrow-right"></i></a>
             </div>
             <div class="box">
-              <img src="seo\images\case-study-gallery-1-1-200x150.jpg" alt="">
+              <i class="fas fa-city ms_yellow"></i>
+              <h3>Local SEO</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="ms_yellow">Read More <i class="fas fa-chevron-right arrow-right"></i></a>
+            </div>
+            <div class="box">
+              <i class="far fa-chart-bar ms_yellow"></i>
+              <h3>SEO Analysis</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="ms_yellow">Read More <i class="fas fa-chevron-right arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / section see -->
+      <!-- section our-work -->
+      <section id="our-work">
+        <div class="container">
+          <!-- our-work-top -->
+          <div class="our-work-top">
+            <h2>Our Work</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <!-- our-work-center -->
+          <div class="our-work-center">
+            <div class="row">
+              <div class="box">
+                <img src="seo\images\case-study-gallery-3-1-200x150.jpg" alt="">
+              </div>
+              <div class="box">
+                <img src="seo\images\case-study-gallery-2-200x150.jpg" alt="">
+              </div>
+              <div class="box">
+                <img src="seo\images\case-study-gallery-6-1-200x150.jpg" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="box">
+                <img src="seo\images\case-study-gallery-4-1-200x150.jpg" alt="">
+              </div>
+              <div class="box">
+                <img src="seo\images\case-study-gallery-5-1-200x150.jpg" alt="">
+              </div>
+              <div class="box">
+                <img src="seo\images\case-study-gallery-1-1-200x150.jpg" alt="">
+              </div>
+            </div>
+            <div class="btn">
+              <a href="#" class="ms_white bcg_orange">View our work</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / section our-work -->
+      <!-- section our-plans -->
+      <section id="our-plans">
+        <div class="container">
+          <!-- our-plans-top -->
+          <div class="our-plans-top ms_white">
+            <h2>Our Plans</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <!-- our-plans-bottom -->
+          <div class="our-plans-bottom">
+            <div class="box">
+              <h3>Standard</h3>
+              <div class="">
+                <span class="number"><i class="fas fa-dollar-sign"></i>19
+                </span>
+              </div>
+              <div class="ms_grey text">5 Projects</div>
+              <div class="ms_grey text">5 GB Storage</div>
+              <div class="ms_grey text">Unlimited Users</div>
+              <div class="btn"><a href="#" class="ms_black">Start today</a></div>
+            </div>
+            <div class="box">
+              <h3>Premium</h3>
+              <div class="">
+                <span class="number"><i class="fas fa-dollar-sign"></i>29
+                </span>
+              </div>
+              <div class="ms_grey text">10 Projects</div>
+              <div class="ms_grey text">15 GB Storage</div>
+              <div class="ms_grey text">Unlimited Users</div>
+              <div class="btn"><a href="#" class="ms_black">Start today</a></div>
+            </div>
+            <div class="box">
+              <h3>Professional</h3>
+              <div class="">
+                <span class="number"><i class="fas fa-dollar-sign"></i>39
+                </span>
+              </div>
+              <div class="ms_grey text">15 Projects</div>
+              <div class="ms_grey text">30 GB Storage</div>
+              <div class="ms_grey text">Unlimited Users</div>
+              <div class="btn"><a href="#" class="bcg_orange ms_white">Start today</a></div>
+            </div>
+            <div class="box">
+              <h3>Extreme</h3>
+              <div class="">
+                <span class="number"><i class="fas fa-dollar-sign"></i>59
+                </span>
+              </div>
+              <div class="ms_grey text">Unlimited Projects</div>
+              <div class="ms_grey text">Unlimited GB Storage</div>
+              <div class="ms_grey text">Unlimited Users</div>
+              <div class="btn"><a href="#" class="ms_black">Start today</a></div>
+            </div>
+        </div>
+      </section>
+      <!-- / section our-plans -->
+      <!-- section our-news -->
+      <section id="our-news">
+        <div class="container">
+          <!-- our-news-top -->
+          <div class="our-news-top">
+            <h2>Our News</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <!-- our-news-bottom -->
+          <div class="our-news-bottom">
+            <div class="box">
+              <img src="seo\images\related-service-2-320x202.jpg" alt="">
+              <h3 class="ms_orange">Why You Need A SEO Agency Now</h3>
+              <div class="date ms_grey">November 1st, 2017</div>
+              <p class="ms_grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="box">
+              <img src="seo\images\related-service-4-320x202.jpg" alt="">
+              <h3 class="ms_orange">SEO Tips For Your Startup</h3>
+              <div class="date ms_grey">November 1st, 2017</div>
+              <p class="ms_grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="box">
+              <img src="seo\images\blog-post-6-320x202.jpg" alt="">
+              <h3 class="ms_orange">Image Optimization For Your Site</h3>
+              <div class="date ms_grey">November 1st, 2017</div>
+              <p class="ms_grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
           <div class="btn">
-            <a href="#" class="ms_white bcg_orange">View our work</a>
+            <a href="#" class="ms_white bcg_orange">Go To news</a>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- / section our-work -->
-    <!-- section our-plans -->
-    <section id="our-plans">
-      <div class="container">
-        <!-- our-plans-top -->
-        <div class="our-plans-top ms_white">
-          <h2>Our Plans</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <!-- our-plans-bottom -->
-        <div class="our-plans-bottom">
-          <div class="box">
-            <h3>Standard</h3>
-            <div class="">
-              <span class="number"><i class="fas fa-dollar-sign"></i>19
-              </span>
-            </div>
-            <div class="ms_grey text">5 Projects</div>
-            <div class="ms_grey text">5 GB Storage</div>
-            <div class="ms_grey text">Unlimited Users</div>
-            <div class="btn"><a href="#" class="ms_black">Start today</a></div>
-          </div>
-          <div class="box">
-            <h3>Premium</h3>
-            <div class="">
-              <span class="number"><i class="fas fa-dollar-sign"></i>29
-              </span>
-            </div>
-            <div class="ms_grey text">10 Projects</div>
-            <div class="ms_grey text">15 GB Storage</div>
-            <div class="ms_grey text">Unlimited Users</div>
-            <div class="btn"><a href="#" class="ms_black">Start today</a></div>
-          </div>
-          <div class="box">
-            <h3>Professional</h3>
-            <div class="">
-              <span class="number"><i class="fas fa-dollar-sign"></i>39
-              </span>
-            </div>
-            <div class="ms_grey text">15 Projects</div>
-            <div class="ms_grey text">30 GB Storage</div>
-            <div class="ms_grey text">Unlimited Users</div>
-            <div class="btn"><a href="#" class="bcg_orange ms_white">Start today</a></div>
-          </div>
-          <div class="box">
-            <h3>Extreme</h3>
-            <div class="">
-              <span class="number"><i class="fas fa-dollar-sign"></i>59
-              </span>
-            </div>
-            <div class="ms_grey text">Unlimited Projects</div>
-            <div class="ms_grey text">Unlimited GB Storage</div>
-            <div class="ms_grey text">Unlimited Users</div>
-            <div class="btn"><a href="#" class="ms_black">Start today</a></div>
-          </div>
-      </div>
-    </section>
-    <!-- / section our-plans -->
-    <!-- section our-news -->
-    <section id="our-news">
-      <div class="container">
-        <!-- our-news-top -->
-        <div class="our-news-top">
-          <h2>Our News</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <!-- our-news-bottom -->
-        <div class="our-news-bottom">
-          <div class="box">
-            <img src="seo\images\related-service-2-320x202.jpg" alt="">
-            <h3 class="ms_orange">Why You Need A SEO Agency Now</h3>
-            <div class="date ms_grey">November 1st, 2017</div>
-            <p class="ms_grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class="box">
-            <img src="seo\images\related-service-4-320x202.jpg" alt="">
-            <h3 class="ms_orange">SEO Tips For Your Startup</h3>
-            <div class="date ms_grey">November 1st, 2017</div>
-            <p class="ms_grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class="box">
-            <img src="seo\images\blog-post-6-320x202.jpg" alt="">
-            <h3 class="ms_orange">Image Optimization For Your Site</h3>
-            <div class="date ms_grey">November 1st, 2017</div>
-            <p class="ms_grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-        <div class="btn">
-          <a href="#" class="ms_white bcg_orange">Go To news</a>
-        </div>
-      </div>
-    </section>
-    <!-- / section our-news -->
-  </main>
-  <!-- footer -->
-  <footer>
+      </section>
+      <!-- / section our-news -->
+    </main>
+    <!-- footer -->
+    <footer>
 
-  </footer>
+    </footer>
+  </div>
+
   <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
