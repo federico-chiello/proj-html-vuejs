@@ -365,6 +365,7 @@ main section#our-plans .our-plans-bottom div.text {
 /* section our-news */
 main section#our-news{
   background-color: #f7f8fa;
+  padding: 70px 0;
 }
 
 /* our-news-top */
@@ -372,6 +373,48 @@ main section#our-news .our-news-top{
   text-align: center;
   width: 50%;
   margin: 0 auto;
+}
+
+/* our-news-bottom */
+main section#our-news .our-news-bottom{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main section#our-news .our-news-bottom .box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc(100% / 4);
+  padding: 40px;
+  text-align: center;
+}
+
+main section#our-news .our-news-bottom .box img,
+main section#our-news .our-news-bottom .box h3,
+main section#our-news .our-news-bottom .box div,
+main section#our-news .our-news-bottom .box p{
+  padding: 8px 0;
+}
+
+main section#our-news .our-news-bottom .box div.date{
+  font-size: 12px;
+}
+
+main section#our-news .btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+main section#our-news .btn a{
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 
