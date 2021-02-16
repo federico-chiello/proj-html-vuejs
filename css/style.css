@@ -164,7 +164,6 @@ header .jumbotron .text ul li a{
 
 /* MAIN */
 main{
-  background-color: green;
   width: 100%;
 }
 
@@ -526,6 +525,7 @@ main section#start {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /* filter: grayscale(80%); */
   padding: 100px 0;
 }
 
@@ -536,6 +536,7 @@ main section#start .container{
   align-items: center;
   width: 50%;
   text-align: center;
+  /* z-index: 1; */
 }
 
 main section#start .container h2,
@@ -551,10 +552,21 @@ main section#start .btn a{
   text-transform: uppercase;
 }
 
-
 /* FOOTER */
 footer{
-  background-color: blue;
+  background-color: white;
   width: 100%;
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+footer img{
+  width: 10%;
+}
+
+footer .footer-nav ul li:first-child a{
+  color: #ffa837;
 }
