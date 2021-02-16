@@ -520,6 +520,37 @@ main section#what .what-bottom img{
   width: 100px;
 }
 
+/* SECTION START */
+main section#start {
+  background-image: url('../seo/images/CTA-seo-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+main section#start .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+main section#start .container h2,
+main section#start .container p,
+main section#start .container .btn{
+  margin-bottom: 30px;
+}
+
+main section#start .btn a{
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 
 /* FOOTER */
 footer{
