@@ -467,7 +467,58 @@ main section#our-news .btn a{
 }
 
 /* SECTION WHAT */
-main
+main section#what {
+  background-color: white;
+  padding: 70px 0;
+}
+
+/* what-top */
+main section#what .what-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main section#what .what-top h2,
+main section#what .what-top img,
+main section#what .what-top p,
+main section#what .what-top .name{
+  margin-bottom: 30px;
+}
+
+main section#what .what-top img{
+  width: 150px;
+  border-radius: 50%;
+}
+
+main section#what .what-top p{
+  font-style: italic;
+}
+
+main section#what .circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section#what .circle i{
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+
+/* what-bottom */
+main section#what .what-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid #f8f8f8;
+  padding-top: 50px;
+}
+
+main section#what .what-bottom img{
+  width: 100px;
+}
 
 
 /* FOOTER */
