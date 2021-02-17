@@ -13,9 +13,14 @@
 </head>
 <body>
   <div id="avada">
+    <!-- widget -->
+    <div class="scroll-to-top">
+      <a href="#jump-top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <!-- / widget -->
     <!-- header -->
     <header>
-      <div class="container">
+      <div class="container" id="jump-top">
         <!-- navbar -->
         <nav>
           <div class="navbar-left float-left">
@@ -24,13 +29,6 @@
           <div class="navbar-right float-right">
             <ul>
               <li v-for="link in menu"><a href="#" class="ms_white">{{link}}</a></li>
-              <!-- <li><a href="#" class="ms_orange">Home</a></li>
-              <li><a href="#" class="ms_white">Who We Are</a></li>
-              <li><a href="#" class="ms_white">What We Do</a></li>
-              <li><a href="#" class="ms_white">Where We Work</a></li>
-              <li><a href="#" class="ms_white">Careers</a> <span><a href="#" class="ms_orange" id="apply">Apply</a></span></li>
-              <li><a href="#" class="ms_white">News</a></li>
-              <li><a href="#" class="ms_white bcg_orange">Get in touch now</a></li> -->
             </ul>
           </div>
         </nav>
@@ -276,15 +274,28 @@
       <!-- section what -->
       <section id="what">
         <div class="container">
+          <!-- previous arrow  -->
+          <div class="previous ms_blue" @click="previousClient">
+              <i class="fas fa-angle-left"></i>
+          </div>
+          <h2>What Our Clients Say</h2>
           <!-- section what-top -->
-          <div class="what-top">
-            <h2>What Our Clients Say</h2>
+          <div class="what-top" v-for="(client, index) in clients">
+            <img :src="client.image[counter]" alt="">
+            <p class="ms_grey">{{client.review}}</p>
+            <div class="name"><strong>{{client.name}}</strong>, <span class="ms_grey">{{client.role}}</span></div>
+            <!-- <h2>What Our Clients Say</h2>
             <img src="seo\images\testimonials-2.jpg" alt="">
             <p class="ms_grey">Ability proceeds from a fusion of skills, knowledge, understanding and imagination, consolidated by experience.</p>
-            <div class="name"><strong>Luis Desalvo</strong>, <span class="ms_grey">CREO TECH</span></div>
+            <div class="name"><strong>Luis Desalvo</strong>, <span class="ms_grey">CREO TECH</span></div> -->
+          </div>
+          <!-- next arrow -->
+          <div class="next ms_blue" @click="nextClient">
+              <i class="fas fa-angle-right"></i>
           </div>
           <div class="circle">
-            <i class="fas fa-circle"></i><i class="far fa-circle"></i>
+            <i class="fas fa-circle" v-for="(client, index) in clients" :class="(index == counter) ? 'active' : ''" @click="clickCircle(index)"></i>
+            <!-- <i class="far fa-circle"></i> -->
           </div>
           <!-- section what-bottom -->
           <div class="what-bottom">

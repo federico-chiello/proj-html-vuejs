@@ -47,6 +47,14 @@ a {
   line-height: 1.6;
 }
 
+.show {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
 /* COLORI */
 .ms_white{
   color: white;
@@ -78,6 +86,16 @@ a {
 
 .bcg_blue {
   background-color: #556eed;
+}
+
+/* WIDGET */
+.scroll-to-top a{
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  z-index: 1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.81);
 }
 
 /* HEADER */
@@ -472,6 +490,30 @@ main section#what {
 }
 
 /* what-top */
+main section#what .container {
+  position: relative;
+}
+
+main section#what .previous{
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translateY(-40%);
+  font-size: 35px;
+}
+
+main section#what .next{
+  position: absolute;
+  top: 40%;
+  right: 0;
+  transform: translateY(-40%);
+  font-size: 35px;
+}
+
+main section#what h2{
+  text-align: center;
+}
+
 main section#what .what-top{
   display: flex;
   flex-direction: column;
@@ -479,7 +521,7 @@ main section#what .what-top{
   align-items: center;
 }
 
-main section#what .what-top h2,
+main section#what h2,
 main section#what .what-top img,
 main section#what .what-top p,
 main section#what .what-top .name{
@@ -504,6 +546,10 @@ main section#what .circle{
 main section#what .circle i{
   padding-right: 10px;
   margin-bottom: 30px;
+}
+
+main section#what .circle > i.active {
+  color: #5f7afd;
 }
 
 /* what-bottom */
