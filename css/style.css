@@ -507,6 +507,7 @@ main section#what .previous{
   left: 0;
   transform: translateY(-40%);
   font-size: 35px;
+  cursor: pointer;
 }
 
 main section#what .next{
@@ -515,6 +516,7 @@ main section#what .next{
   right: 0;
   transform: translateY(-40%);
   font-size: 35px;
+  cursor: pointer;
 }
 
 main section#what h2{
@@ -548,11 +550,14 @@ main section#what .circle{
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 main section#what .circle i{
   padding-right: 10px;
   margin-bottom: 30px;
+  color: lightblue;
+  cursor: pointer;
 }
 
 main section#what .circle > i.active {

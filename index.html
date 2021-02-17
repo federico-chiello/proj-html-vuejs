@@ -252,14 +252,10 @@
           </div>
           <h2>What Our Clients Say</h2>
           <!-- section what-top -->
-          <div class="what-top" v-for="(client, index) in clients" >
-            <img :src="client.image" alt="">
-            <p class="ms_grey">{{client.review}}</p>
-            <div class="name"><strong>{{client.name}}</strong>, <span class="ms_grey">{{client.role}}</span></div>
-            <!-- <h2>What Our Clients Say</h2>
-            <img src="seo\images\testimonials-2.jpg" alt="">
-            <p class="ms_grey">Ability proceeds from a fusion of skills, knowledge, understanding and imagination, consolidated by experience.</p>
-            <div class="name"><strong>Luis Desalvo</strong>, <span class="ms_grey">CREO TECH</span></div> -->
+          <div class="what-top">
+            <img :src="clients[counter].image" alt="">
+            <p class="ms_grey">{{clients[counter].review}}</p>
+            <div class="name"><strong>{{clients[counter].name}}</strong>, <span class="ms_grey">{{clients[counter].role}}</span></div>
           </div>
           <!-- next arrow -->
           <div class="next ms_blue" @click="nextClient">
@@ -267,7 +263,6 @@
           </div>
           <div class="circle">
             <i class="fas fa-circle" v-for="(client, index) in clients" :class="(index == counter) ? 'active' : ''" @click="clickCircle(index)"></i>
-            <!-- <i class="far fa-circle"></i> -->
           </div>
           <!-- section what-bottom -->
           <div class="what-bottom">
