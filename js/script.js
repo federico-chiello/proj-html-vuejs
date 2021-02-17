@@ -49,6 +49,26 @@ var app = new Vue({
         linkArrow: 'fas fa-chevron-right'
       }
     ],
+    news: [
+      {
+        image: 'seo/images/related-service-2-320x202.jpg',
+        title: 'Why You Need A SEO Agency Now',
+        date: 'November 1st, 2017',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      },
+      {
+        image: 'seo/images/related-service-4-320x202.jpg',
+        title: 'SEO Tips For Your Startup',
+        date: 'November 1st, 2017',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      },
+      {
+        image: 'seo/images/blog-post-6-320x202.jpg',
+        title: 'Image Optimization For Your Site',
+        date: 'November 1st, 2017',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      }
+    ],
     menuFooter: ['Home', 'Who We Are', 'What We Do', 'Where We Work', 'Careers', 'News', 'Get in touch now'],
     counter: 0,
     clients:[

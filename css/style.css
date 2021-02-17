@@ -15,12 +15,6 @@ body {
   margin: 0 auto;
 }
 
-.clearfix::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
 .float-right {
   float: right;
 }
@@ -47,12 +41,8 @@ a {
   line-height: 1.6;
 }
 
-.show {
-  display: block;
-}
-
-.hidden {
-  display: none;
+.mb_30{
+  margin-bottom: 30px;
 }
 
 /* COLORI */
@@ -175,11 +165,6 @@ header .jumbotron .text{
   width: 40%;
 }
 
-header .jumbotron .text h1,
-header .jumbotron .text p{
-  margin-bottom: 30px;
-}
-
 header .jumbotron .text ul li a{
   padding: 10px 20px;
   border-radius: 20px;
@@ -204,11 +189,6 @@ main section#meet .meet-top{
   text-align: center;
   width: 50%;
   margin: 0 auto;
-}
-
-main section#meet .meet-top h2,
-main section#meet .meet-top p{
-  margin-bottom: 40px;
 }
 
 /* meet-center */
@@ -267,11 +247,6 @@ main section#see .see-top{
   margin: 0 auto;
 }
 
-main section#see .see-top h2,
-main section#see .see-top p{
-  margin-bottom: 30px;
-}
-
 /* see-bottom */
 main section#see .see-bottom{
   display: flex;
@@ -321,10 +296,6 @@ main section#our-work .our-work-top{
   padding: 100px 0;
 }
 
-main section#our-work .our-work-top h2{
-  margin-bottom: 30px;
-}
-
 /* our-work-center */
 main section#our-work .our-work-center .row{
   display: flex;
@@ -364,10 +335,6 @@ main section#our-plans .our-plans-top{
   text-align: center;
   width: 50%;
   margin: 0 auto;
-}
-
-main section#our-plans .our-plans-top h2{
-  margin-bottom: 30px;
 }
 
 /* our-plans-bottom */
@@ -417,12 +384,6 @@ main section#our-plans .our-plans-bottom .box:nth-child(3) a{
   border: 0px;
 }
 
-main section#our-plans .our-plans-bottom h3,
-main section#our-plans .our-plans-bottom .price,
-main section#our-plans .our-plans-bottom .text{
-  margin-bottom: 30px;
-}
-
 main section#our-plans .our-plans-bottom div.text {
   font-size: 13px;
 }
@@ -444,10 +405,6 @@ main section#our-news .our-news-top{
   margin: 0 auto;
 }
 
-main section#our-news .our-news-top h2{
-  margin-bottom: 30px;
-}
-
 /* our-news-bottom */
 main section#our-news .our-news-bottom{
   display: flex;
@@ -460,7 +417,6 @@ main section#our-news .our-news-bottom .box{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-basis: calc(100% / 4);
   padding: 40px;
   text-align: center;
 }
@@ -530,13 +486,6 @@ main section#what .what-top{
   align-items: center;
 }
 
-main section#what h2,
-main section#what .what-top img,
-main section#what .what-top p,
-main section#what .what-top .name{
-  margin-bottom: 30px;
-}
-
 main section#what .what-top img{
   width: 150px;
   border-radius: 50%;
@@ -583,7 +532,6 @@ main section#start {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* filter: grayscale(80%); */
   padding: 100px 0;
 }
 
@@ -594,13 +542,6 @@ main section#start .container{
   align-items: center;
   width: 50%;
   text-align: center;
-  /* z-index: 1; */
-}
-
-main section#start .container h2,
-main section#start .container p,
-main section#start .container .btn{
-  margin-bottom: 30px;
 }
 
 main section#start .btn a{
