@@ -1,7 +1,54 @@
 var app = new Vue({
   el: '#avada',
   data:{
-    menu: ['Home', 'Who We Are', 'What We Do', 'Where We Work', 'Careers Apply', 'News', 'Get in touch now'],
+    menu: ['Home', 'Who We Are', 'What We Do', 'Where We Work', 'Careers', 'Apply', 'News', 'Get in touch now'],
+    agencySeo: [
+      {
+        logo: 'fas fa-road',
+        title: 'Establish Goals',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      },
+      {
+        logo: 'fas fa-video',
+        title: 'Work With a Team',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      },
+      {
+        logo: 'fas fa-tint',
+        title: 'Get Results',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      }
+    ],
+    services:[
+      {
+        logo: 'fab fa-google',
+        title: 'Google SEO',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        link: 'Read More',
+        linkArrow: 'fas fa-chevron-right'
+      },
+      {
+        logo: 'fas fa-cog',
+        title: 'Brand Strategy',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        link: 'Read More',
+        linkArrow: 'fas fa-chevron-right'
+      },
+      {
+        logo: 'fas fa-city',
+        title: 'Local SEO',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        link: 'Read More',
+        linkArrow: 'fas fa-chevron-right'
+      },
+      {
+        logo: 'far fa-chart-bar',
+        title: 'SEO Analysis',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        link: 'Read More',
+        linkArrow: 'fas fa-chevron-right'
+      }
+    ],
     menuFooter: ['Home', 'Who We Are', 'What We Do', 'Where We Work', 'Careers', 'News', 'Get in touch now'],
     counter: 0,
     clients:[
@@ -17,19 +64,13 @@ var app = new Vue({
         review: 'Avada allowed me to carry out advertising campaigns without any difficulty.',
         name: 'Rachel Stuart',
         role: 'DIGITAL MARKETER',
-        unvisible: 'hidden'
+        visible: 'show'
       }
     ]
   },
   methods: {
-    nextClient(index){
+    nextClient(){
       (this.counter < (this.clients.length - 1)) ? this.counter++ : this.counter = 0;
-      // if (this.counter == this.clients[index]) {
-      //   this.visible;
-      // } else {
-      //   this.unvisible;
-      // }
-      // console.log(this.clients);
       console.log(this.counter);
     },
     previousClient(){

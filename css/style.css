@@ -48,7 +48,7 @@ a {
 }
 
 .show {
-  display: flex;
+  display: block;
 }
 
 .hidden {
@@ -143,6 +143,13 @@ header nav .navbar-right #apply{
 }
 
 header nav .navbar-right ul li:first-child a{
+  color: #ffa837;
+}
+
+header nav .navbar-right ul li:nth-child(6) a{
+  border: 1px solid #ffa837;
+  border-radius: 5px;
+  padding: 5px;
   color: #ffa837;
 }
 

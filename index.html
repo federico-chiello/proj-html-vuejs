@@ -59,20 +59,10 @@
           </div>
           <!-- meet-center -->
           <div class="meet-center">
-            <div class="box">
-              <i class="fas fa-road ms_orange"></i>
-              <h3>Establish Goals</h3>
-              <p class="ms_grey ms_line">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="box">
-              <i class="fas fa-video ms_orange"></i>
-              <h3>Work With a Team</h3>
-              <p class="ms_grey ms_line">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="box">
-              <i class="fas fa-tint ms_orange"></i>
-              <h3>Get Results</h3>
-              <p class="ms_grey ms_line">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="box" v-for="agency in agencySeo">
+              <i :class="agency.logo" class="ms_orange"></i>
+              <h3>{{agency.title}}</h3>
+              <p class="ms_grey ms_line">{{agency.text}}</p>
             </div>
           </div>
           <!-- meet-bottom -->
@@ -92,29 +82,11 @@
           </div>
           <!-- see-bottom -->
           <div class="see-bottom ms_white">
-            <div class="box">
-              <i class="fab fa-google ms_yellow"></i>
-              <h3>Google SEO</h3>
-              <p class="ms_line">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#" class="ms_yellow">Read More <i class="fas fa-chevron-right arrow-right"></i></a>
-            </div>
-            <div class="box">
-              <i class="fas fa-cog ms_yellow"></i>
-              <h3>Brand Strategy</h3>
-              <p class="ms_line">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#" class="ms_yellow">Read More <i class="fas fa-chevron-right arrow-right"></i></a>
-            </div>
-            <div class="box">
-              <i class="fas fa-city ms_yellow"></i>
-              <h3>Local SEO</h3>
-              <p class="ms_line">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#" class="ms_yellow">Read More <i class="fas fa-chevron-right arrow-right"></i></a>
-            </div>
-            <div class="box">
-              <i class="far fa-chart-bar ms_yellow"></i>
-              <h3>SEO Analysis</h3>
-              <p class="ms_line">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#" class="ms_yellow">Read More <i class="fas fa-chevron-right arrow-right"></i></a>
+            <div class="box" v-for="service in services">
+              <i :class="service.logo" class="ms_yellow"></i>
+              <h3>{{service.title}}</h3>
+              <p class="ms_line">{{service.text}}</p>
+              <a href="#" class="ms_yellow">{{service.link}} <i :class="service.linkArrow" class="arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -172,7 +144,7 @@
             <div class="box">
               <h3>Standard</h3>
               <div class="price">
-                <div class=""><i class="fas fa-dollar-sign ms_grey"></i></div>
+                <div><i class="fas fa-dollar-sign ms_grey"></i></div>
                 <div class="number ms_blue">19</div>
                 <div class="cent">
                   <div class="ms_blue">99</div>
@@ -188,7 +160,7 @@
             <div class="box">
               <h3>Premium</h3>
               <div class="price">
-                <div class=""><i class="fas fa-dollar-sign ms_grey"></i></div>
+                <div><i class="fas fa-dollar-sign ms_grey"></i></div>
                 <div class="number ms_blue">29</div>
                 <div class="cent">
                   <div class="ms_blue">99</div>
@@ -204,7 +176,7 @@
             <div class="box">
               <h3>Professional</h3>
               <div class="price">
-                <div class=""><i class="fas fa-dollar-sign ms_grey"></i></div>
+                <div><i class="fas fa-dollar-sign ms_grey"></i></div>
                 <div class="number ms_blue">39</div>
                 <div class="cent">
                   <div class="ms_blue">99</div>
@@ -220,7 +192,7 @@
             <div class="box">
               <h3>Extreme</h3>
               <div class="price">
-                <div class=""><i class="fas fa-dollar-sign ms_grey"></i></div>
+                <div><i class="fas fa-dollar-sign ms_grey"></i></div>
                 <div class="number ms_blue">59</div>
                 <div class="cent">
                   <div class="ms_blue">99</div>
@@ -280,8 +252,8 @@
           </div>
           <h2>What Our Clients Say</h2>
           <!-- section what-top -->
-          <div class="what-top" v-for="(client, index) in clients">
-            <img :src="client.image[counter]" alt="">
+          <div class="what-top" v-for="(client, index) in clients" >
+            <img :src="client.image" alt="">
             <p class="ms_grey">{{client.review}}</p>
             <div class="name"><strong>{{client.name}}</strong>, <span class="ms_grey">{{client.role}}</span></div>
             <!-- <h2>What Our Clients Say</h2>
